@@ -12,6 +12,14 @@ const app = express();
 mongoose.connect('mongodb://localhost:27017/auth');
 
 // App Setup
+app.use(function (req, res, next) {
+    if (req.headers['x-forwarded-proto'] === 'https') {
+        res.redirect('http://' + req.hostname + req.url);
+    } else {
+        next();
+    }
+});
+
 app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({type: '*/*'}));

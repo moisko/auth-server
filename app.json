@@ -1,0 +1,6 @@
+{
+  "name": "auth server",
+  "description": "auth jwt token server",
+  "repository": "https://github.com/moisko/auth-server.git",
+  "keywords": ["node", "express", "react"]
+}
