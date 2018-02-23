@@ -10,7 +10,7 @@ const app = express();
 
 // DB Setup
 // mongoose.connect('mongodb://localhost:27017/auth');
-mongoose.connect('mongodb://heroku_gg35vrsj:g2rv6mbs6g3k2ml3qni20r8fbe@ds147518.mlab.com:47518/heroku_gg35vrsj');
+mongoose.connect('mongodb://heroku_gg35vrsj:g2rv6mbs6g3k2ml3qni20r8fbe@ds147518.mlab.com:47518/heroku_gg35vrsj/auth');
 
 // App Setup
 app.use(morgan('combined'));
