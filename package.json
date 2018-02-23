@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon server.js",
     "build": "webpack -w",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Boris Borisov",
@@ -18,12 +18,12 @@
     "jwt-simple": "^0.5.1",
     "mongoose": "^5.0.6",
     "morgan": "^1.9.0",
-    "nodemon": "^1.9.1",
     "passport": "^0.3.2",
     "passport-jwt": "^2.0.0",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "nodemon": "^1.9.1"
   }
 }
